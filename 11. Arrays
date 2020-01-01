@@ -1,0 +1,73 @@
+Arrays contain a collection of data; like a list but in code form.
+
+A Array is covered by [] and sepersted by ,.
+
+For Example:
+
+students = ["Harry Potter", "Ron Weasley", "Hermione Granger", "Draco Malfoy"]
+
+_____________________________________
+
+We can create an empty array like:
+
+empty_array = []
+or
+empty_array_2 = Array.new
+______________________________________
+
+How to add to an Array:
+
+This adds to the end of the array:
+we can use << or the .push
+
+This adds to the front of the array:
+we can us the .unshift
+
+______________________________________
+
+How to remove from and array:
+
+From the end of the array:
+we use the .pop method
+
+If we want to remove from the front of the array:
+we use the .shift method
+
+______________________________________
+
+The order of the array always starts from zero.
+
+For Example:
+
+students = ["Harry Potter", "Ron Weasley", "Hermione Granger", "Draco Malfoy"]
+                  0               1                2                  3
+______________________________________
+
+If i wanted to get a certian data from the array:
+
+I would write name of the array and the num of where the data is located, for example:
+
+students[2]
+this would give me "Hermione Granger", becuase she is num 2 in our array.
+
+______________________________________
+
+There are a few other things that we can do with Arrays, such as:
+
+[.count] #this will count the num of items in the arrays.
+[.reverse] #this will return a reversed version of the array, but it doesn't save the reverse method, only used for that instance.
+[.include?] #this will tell of true or false to the argument in the array.
+[.first] #this will show you the first element in the array
+[.last] #this will show you the last element in the array.
+[.index] #this checks if the element you asked to look for isn't inside the array you are checking, it will give you nil, if it is in the array, it will give you the num of that element.
+
+head to Ruby.org if i want to learn more about arrays.
+
+______________________________________
+
+If i wanted to delete a certain data in the array, i can do so by using [.delete] and data name, for example:
+
+students = ["Harry Potter", "Ron Weasley", "Hermione Granger", "Draco Malfoy"]
+
+student.delete("Ron Weasley")
+

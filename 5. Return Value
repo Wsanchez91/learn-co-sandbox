@@ -1,0 +1,32 @@
+The differences between [puts and print]
+
+[puts] adds a new line & [print] does not:
+
+3.times { print "Hello!" }
+# > Hello!Hello!Hello!
+ 
+3.times { puts "Hello!" }
+# > Hello!
+# > Hello!
+# > Hello!
+
+Returning Values:
+
+Code	                   Return Value
+"Hello world"	           "Hello world"
+6 + 3	                        9
+president = "Obama"	       "Obama"
+total = 6 + 3	                9
+puts "hello world"	         nil
+print "hello world"	         nil
+
+Return Values of Method:
+
+def restaurant
+  restaurant_name = "Guy's American Kitchen & Bar"
+  cuisine = "american"
+  motto = "Welcome to Flavor Town!"
+end
+
+# using [return]
+if you use the [return] method in a [def], it will return that value.

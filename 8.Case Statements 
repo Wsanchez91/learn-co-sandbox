@@ -1,0 +1,53 @@
+A case statment is a power tool to test a certian condition.
+  there are 3 basic steps to a case statement:
+  1. we will need a value.
+  2. we will want one or more conditions to campare to the value.
+  3. we will add the code we want to run if that condition is met.
+  
+example:  
+  
+case name 
+ 
+  when "Alice"
+    puts "Hello, Alice!"
+  when "The White Rabbit"
+    puts "Don't be late, White Rabbit"
+  when "The Mad Hatter"
+    puts "Welcome to the tea party, Mad Hatter"
+  when "The Queen of Hearts"
+    puts "Please don't chop off my head!"
+  else 
+    puts "Whoooo are you?"
+end
+
+Steps to create case statement:
+
+1. Create a value
+  A case statement starts with the case keyword followed by a value to test.
+  
+  case greeting
+  # ...
+  end
+
+2. Create the Condition:
+  Next, the [when] keyword is followed by a condition.
+  
+  case greeting
+  when "unfriendly_greeting"
+    #...
+  when "friendly_greeting"
+    #...
+end
+
+3. Add the code:
+  The functionality that we wish to happen when the condition is met is placed on an indented line directly under the when line. Let's define the behavior
+  
+  greeting = "friendly_greeting"
+ 
+case greeting
+  when "unfriendly_greeting"
+    puts "What do you want!?"
+  when "friendly_greeting"
+    puts "Hi! How are you?"
+end
+  

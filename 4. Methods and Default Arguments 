@@ -1,0 +1,29 @@
+1. Here we are setting a default value, below is a example: 
+
+#           assigning a default value
+def greeting(name = "Ruby programmer")
+  puts "Hello, #{name}"
+end
+
+if run, it will give me:
+  "Hello, Ruby programmer"
+
+# by adding a [=] within the argument, it makes it a default value. if i don't write a name in the argument, it will use the default value.
+
+2. If i have a default value, but I still do set a name to the argument, it will use the set name and not the argument. For exmaple:
+
+def greeting(name = "Ruby programmer")
+  puts "Hello, #{name}"
+end
+
+greeting("Spohie")
+
+if run, it will give me:
+  "Hello, Sophie"
+
+3. I can also do a 2 argument method with 1 of the 2 arguments being a default value. 
+def greeting(name, language="Ruby")
+  puts "Hello, #{name}. We heard you are a great #{language} programmer."
+end
+
+# the default arguments/value most always be at the end. if its in the front, it wouldn't read the argument.

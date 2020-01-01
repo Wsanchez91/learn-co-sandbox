@@ -1,0 +1,27 @@
+# Method Scope and Variable Scope
+Scope is a area/section/location were a certain [def] information/data stays in. 
+for example:
+
+name = "Joe" # Variable and its not within the [def] method below.
+ 
+def greeting(name)
+   puts "Hello, #{name}"
+end
+
+greeting("Sophie") # if i run this, i will get "Hello, Sophie", since we are just using the [def] method for the statment.
+
+# Method Scope in Ruby is anything between [def] and [end].
+
+evil_monster = "Bowser"
+ 
+def princess_peaches_castle
+  puts "#{evil_monster} is trying to kidnap Princess Peach!"
+end
+
+if i run this, i will get an error saying NameError: Undefined Local Variable, because evil_monster = "Bowser" is outside of the [def], and its not calling on the [def] method to change the name.
+
+if we change the [def] methed that starts with:
+
+def princess_peaches_castle(evil_monster)
+
+Then i will work because the variable is stated i the method.

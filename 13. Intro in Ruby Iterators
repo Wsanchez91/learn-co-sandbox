@@ -1,0 +1,46 @@
+primary_colors = ["Red", "Yellow", "Blue"]
+primary_colors.each do |color| # do begins a block
+  # the lines between the do/end are the block's body
+  puts "Primary Color #{color} is #{color.length} letters long."
+end # end terminates the block
+
+The [||] is called a pipe.
+  When invoking an iterator like [each], the variable name inside the pipes acts as an argument that is being passed into the block. The iterator will pass, or yield, each element of the collection on which it is called to the block. Each element, as it gets passed into the block, will be equal to the variable name inside the pipes.
+  If the array ends will s, and what we put it in the pipes is the name of the array but without the s. 
+  For Example:
+  
+  brothers = ["Tim", "Tom", "Jim"]
+brothers.each do |brother|
+  puts "Stop hitting yourself #{brother}!"
+end
+___________________________________________
+We can also use more than one variable:
+  brothers = ["Tim", "Tom", "Jim"]
+counter = 1
+brothers.each do |brother|
+  puts "This is loop number #{counter}"
+  puts "Stop hitting yourself #{brother}!"
+  counter += 1
+end
+
+If I run this code, I should get:
+
+This is loop number 1
+Stop hitting yourself Tim!
+This is loop number 2
+Stop hitting yourself Tom!
+This is loop number 3
+Stop hitting yourself Jim!
+
+___________________________________________
+
+The #each method will always return the original collection on which it was called.
+
+___________________________________________
+
+The [{}] Syntax
+
+[{}] does the same thing as do/end
+
+brothers = ["Tim", "Tom", "Jim"]
+brothers.each{|brother| puts "Stop hitting yourself #{brother}!"}

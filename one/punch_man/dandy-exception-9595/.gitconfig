@@ -1,0 +1,12 @@
+[user]
+  user  = 'dandy-exception-9595'
+  name  = 'William Sanchez'
+  email = 'williamsanchez.8055@gmail.com'
+[github]
+  user  = 'dandy-exception-9595'
+  email = 'williamsanchez.8055@gmail.com'
+[github "user"]
+  user  = 'dandy-exception-9595'
+  email = 'williamsanchez.8055@gmail.com'
+[push]
+  default = simple

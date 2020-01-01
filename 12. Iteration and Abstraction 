@@ -1,0 +1,50 @@
+The difference between looping and iteration.
+  Looping occurs when you tell your program to do something a certain number of time.
+  Iteration occurs when you have a collection of data (for example, an array), and you operate on each member of that collection. 
+  
+  For example, if I tell my program to print out the phrase "I love programming!" five times, that's looping. If I tell my program to enumerate over the array [1, 2, 3, 4, 5] and add 10 to each number, that's iteration.
+_____________________________________________
+  [loop] - The Least Abstract
+  
+  Exmple:
+  
+  basket = ["apple 1","apple 2","apple 3","apple 4","apple 5","apple 6","apple 7","apple 8","apple 9","apple 10"]
+ 
+apples_in_basket = basket.size # Step 1
+apples_taken_out = 0 # Step 2
+ 
+loop do # Step 3
+    if apples_taken_out < apples_in_basket 
+        # Step 4
+        puts "Taking out #{basket[apples_taken_out]}"
+        apples_taken_out += 1
+    else
+        # Step 5
+        break
+    end
+end
+_____________________________________________
+
+[While] - A Little More Abstract
+
+basket = ["apple 1","apple 2","apple 3","apple 4","apple 5","apple 6","apple 7","apple 8","apple 9","apple 10"]
+ 
+apples_in_basket = basket.size # Step 1
+apples_taken_out = 0 # Step 2
+ 
+# Step 3 + 4
+while apples_taken_out < apples_in_basket
+    puts "Taking out #{basket[apples_taken_out]}"
+    apples_taken_out += 1
+end
+
+_____________________________________________
+
+[each] - The Most Abstract
+
+basket = ["apple 1","apple 2","apple 3","apple 4","apple 5","apple 6","apple 7","apple 8","apple 9","apple 10"]
+ 
+# Step 1,2,3,4,5 as one, abstractly
+basket.each do |apple|
+  puts "Taking out #{apple}"
+end

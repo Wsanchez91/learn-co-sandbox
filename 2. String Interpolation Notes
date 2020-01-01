@@ -1,0 +1,3 @@
+num_of_attendees = 547
+puts "There are num_of_attendees people coming to Beyonce's birthday party."
+# once i run, it doesn't say ""There are 547 people coming to Beyonce's birthday party.". the reason is because the [num_of_attendees] in the statement wasn't written correctly. It shoul dhave been written as #{num_of_attendees}, this way it would actually enter the value i set to [num_of_attendees].

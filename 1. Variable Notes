@@ -1,0 +1,24 @@
+# variables are just a thing like a word or number that we can store date on. For example:
+first_number = 7  
+# this an example of 2 variables equaling each other.
+second_number = 14 
+# this one too
+
+sum = first_number + second_number 
+
+# here, since we already set first_number and second_number as interges, we can add them. 
+# I used sum but it still doesn't have a value. What gives it it's value is (first_number + second_number) or (7 + 14).
+# the (+) added the first_number and second_number, which I called sum.
+
+puts sum
+
+current_president = "Barack Obama"
+# here I set current_president variable equal "Barack Obama"
+  puts "In 2016, the president was #{current_president}."
+# (puts) allows me to run a small statment. In this case, after I ran this statment, it returned "In 2016, the president was Barack Obama."
+
+sound = "squeak"
+sound.upcase
+#=> "SQUEAK"
+# using the [.upcase] at the end of sound, that was set to "squeak", made it upper case, so to "SQUEAK"
+# ok, but if i write [sound] again, it will still give me "squeak", because the [.upcase] only effects the variable it used on, but its not perminemt.
